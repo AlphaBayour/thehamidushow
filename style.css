@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+::selection{
+  color: #000;
+  background: #fff;
+}
+nav{
+  position: fixed;
+  background: #050000;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 12;
+}
+nav .menu{
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.menu .logo a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+.logo >img{
+    width: 15%;
+    float: left;
+}
+.menu ul{
+  display: inline-flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: gold;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background: #fff;
+  color: black;
+}
+.img{
+background: url('slum.jpeg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  
+}
+.imgabout{
+    background-image: url('slum.jpeg');
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      opacity: 40%;
+      
+      
+    }
+
+    
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.center{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.aboutcenter{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+.center .title{
+  color: gold;
+  font-size: 60px;
+  font-weight: 600;
+}
+.center .titles{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .center .titles > img{
+    width: 60%;
+    float: right;
+  }
+  .imgtextt {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 40%;
+    float: left;
+    box-sizing: border-box;
+    
+   
+  }
+  .imgtextt >p {
+    
+    text-align: right;
+    
+  }
+
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    right: 100px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: red;
+    opacity: 90%;
+  }
+  
+  .row {
+    background-color: rgb(189, 188, 188);
+  }
+  
+.center .sub_title{
+  color: gold;
+  font-size: 52px;
+  font-weight: 600;
+}
+.center .btns{
+  margin-top: 20px;
+}
+.center .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid gold;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.center .btns button:first-child{
+  color: gold;
+  background: none;
+}
+.btns button:first-child:hover{
+  background: gold;
+  color: black;
+}
+.center .btns button:last-child{
+  background: gold;
+  color: black;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: red;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: red;
+  color: white;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+    
+    .contact {
+      background-color: rgb(7, 0, 0);
+    }
+    .form{
+
+      background-color: rgb(59, 59, 59);
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 10px;
+      padding-right: 30px;
+      border-radius: 5px;
+      font-size: 30px;
+     color: black; 
+     
+  }
+  #name, #email, #phone, #comment-box, #reservation {
+      border-radius: 7px;
+      width: 100%;
+      height: 45px;
+      
+  }
+  #form label{
+      font-weight: 200px;
+      color: red;
+      font-size: large;
+      
+  }
+  #form input{
+      font-size: 200px;
+      color: black
+      
+      
+  }
+  #message {
+      border-radius: 7px;
+      width: 100%;
+      height: 70px;
+  }
+  #sub{
+      width: 100%;
+      height: 50px;
+      border-radius: 7px;
+      background-color: red;
+      color: white;
+      font-size: 40px;
+  }
+  
+  
+  
+.footer {
+    background-color: black;
+    width: 100%;
+    height: auto;
+   padding: 20px;
+    color: ivory;
+    font-size: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
